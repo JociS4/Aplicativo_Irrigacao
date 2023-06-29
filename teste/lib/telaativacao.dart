@@ -6,7 +6,6 @@ class TelaAtivacao extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
@@ -46,7 +45,7 @@ class TelaAtivacao extends StatelessWidget {
                       size: 75,
                     ),
                     Text(
-                      DateFormat('MM/yy').format(DateTime.now()),
+                      DateFormat('dd/MM').format(DateTime.now()),
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -73,6 +72,7 @@ class TelaAtivacao extends StatelessWidget {
           ElevatedButton(
             onPressed: (){
               //Navigator.pop(context);
+              print('Clicou no botão');
             },
             style: ElevatedButton.styleFrom(
               primary: Color(0xFF00897B),
@@ -88,9 +88,10 @@ class TelaAtivacao extends StatelessWidget {
           ElevatedButton(
             onPressed: (){
               //Navigator.pop(context)
+              print('Botão funcionando');
             },
             style: ElevatedButton.styleFrom(
-                primary: Color(0xFF26C6DA),
+              primary: Color(0xFF26C6DA),
             ),
             child: Text(
               'Iniciar a Irrigação',
